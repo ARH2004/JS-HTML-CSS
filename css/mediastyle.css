@@ -1,0 +1,288 @@
+@charset "UTF-8";
+/* Подключение media-запросов start*/
+@media (max-width: 1024px) {
+  .nav__link {
+    font-size: 14px;
+  }
+  .promo__title {
+    font-size: 55px;
+  }
+  .promo__subtitle {
+    font-size: 40px;
+  }
+  .promo__date {
+    font-size: 27px;
+  }
+  .stats__dec44 {
+    left: 635px;
+  }
+  .logo__img {
+    max-width: 75px;
+  }
+}
+@media (max-width: 970px) {
+  .nav__link {
+    font-size: 13px;
+  }
+  .promo__title {
+    font-size: 50px;
+  }
+  .promo__subtitle {
+    font-size: 35px;
+  }
+  .promo__date {
+    font-size: 25px;
+  }
+  .stats__cars-lamb {
+    max-width: 600px;
+  }
+  .stats__moving {
+    font-size: 13px;
+  }
+  .stats__num {
+    font-size: 12px;
+  }
+  .stats__dec1 {
+    top: -225px;
+    left: -25px;
+    max-width: 170px;
+  }
+  .stats__dec2 {
+    top: -100px;
+    left: 30px;
+    max-width: 400px;
+  }
+  .stats__dec33 {
+    top: 290px;
+    left: 340px;
+    max-width: 250px;
+  }
+  .stats__dec44 {
+    left: 520px;
+    top: 460px;
+    max-width: 260px;
+  }
+  .logo__img {
+    max-width: 70px;
+  }
+}
+@media (max-width: 928px) {
+  .nav__link {
+    font-size: 12px;
+  }
+  .logo__img {
+    max-width: 65px;
+  }
+}
+@media (max-width: 790px) {
+  .promo__title {
+    font-size: 45px;
+  }
+  .promo__subtitle {
+    font-size: 30px;
+  }
+  .promo__date {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .sidebar {
+    display: block;
+    z-index: 9;
+  }
+  .nav__list {
+    display: none;
+  }
+  #menu {
+    display: block;
+  }
+  .s {
+    display: block;
+    margin: 0 auto;
+  }
+  .info__text-one {
+    font-size: 14px;
+  }
+  .info__text-two {
+    font-size: 14px;
+  }
+  .team__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .team__image {
+    max-width: 350px;
+    margin-top: 30px;
+  }
+  .calendar__wrapper {
+    flex-direction: column;
+  }
+  .calendar__table {
+    margin-top: 50px;
+  }
+  .trec__imag {
+    max-width: 400px;
+  }
+  .stats__wrapper {
+    flex-direction: column;
+  }
+  .stats__title {
+    padding-bottom: 25px;
+  }
+  .stats__moving {
+    font-size: 10px;
+  }
+  .stats__num {
+    font-size: 10px;
+  }
+  .stats__cars-lamb {
+    max-width: 500px;
+  }
+  .stats__dec1 {
+    top: -140px;
+    left: 5px;
+    max-width: 100px;
+  }
+  .stats__dec2 {
+    max-width: 300px;
+    top: -75px;
+  }
+  .stats__dec33 {
+    top: 260px;
+    left: 300px;
+    max-width: 200px;
+  }
+  .stats__dec44 {
+    display: none;
+  }
+}
+.video {
+  background-size: 600px;
+  margin-top: -50px;
+}
+.video__link {
+  left: 46.5%;
+  bottom: 45%;
+}
+
+.swiper-wrapper {
+  text-align: center;
+}
+
+.swiper-button-left {
+  margin-top: -6%;
+}
+
+.swiper-button-right {
+  margin-top: -6%;
+}
+
+.quote__image {
+  max-width: 300px;
+}
+
+.footer__adress-text {
+  font-size: 14px;
+}
+.footer__map {
+  max-width: 320px;
+  max-height: 200px;
+}
+
+@media (max-width: 610px) {
+  .trec__imag {
+    max-width: 300px;
+    margin-top: 100px;
+  }
+  .stats__cars-lamb {
+    max-width: 400px;
+  }
+  .stats__moving {
+    font-size: 8px;
+  }
+  .stats__num {
+    font-size: 8px;
+  }
+  .video {
+    background-size: 500px;
+  }
+  .sots {
+    padding-top: 70px;
+  }
+  .blog__item-title {
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .blog__item-text {
+    font-size: 13px;
+  }
+  .quote__wrapper {
+    flex-direction: column;
+  }
+  .quote__image {
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: -40px;
+  }
+  .footer__map {
+    max-width: 250px;
+    max-height: 150px;
+  }
+}
+@media (max-width: 435px) {
+  .promo__title {
+    font-size: 25px;
+  }
+  .promo__subtitle {
+    font-size: 20px;
+  }
+  .promo__date {
+    font-size: 16px;
+  }
+  .trec__imag {
+    max-width: 200px;
+    margin-top: 50px;
+  }
+  .video {
+    background-size: 400px;
+    margin-top: -70px;
+    margin-bottom: -70px;
+  }
+  .swiper-button-left {
+    padding-left: 44%;
+    margin-top: -9%;
+  }
+  .swiper-button-right {
+    padding-left: 54%;
+    margin-top: -9%;
+  }
+  .stats__cars-lamb {
+    max-width: 300px;
+  }
+  .stats__dec1 {
+    top: -95px;
+    left: -5px;
+    max-width: 70px;
+  }
+  .stats__dec2 {
+    max-width: 200px;
+    top: -45px;
+    left: 0px;
+  }
+  .stats__dec33 {
+    top: 190px;
+    left: 215px;
+    max-width: 150px;
+  }
+  .footer {
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+  .footer__map {
+    max-width: 150px;
+    max-height: 200px;
+  }
+}
+/* Подключение media-запросов end*/

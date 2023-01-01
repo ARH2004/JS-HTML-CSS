@@ -1,0 +1,584 @@
+/* Обнуление стилей start */
+@import "nullstyle.css";
+/* Обнуление стилей end */
+
+/* Подключение шрифтов start*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* Подключение шрифтов end*/
+
+/* Подключение миксин start*/
+@import "mixninsstyle.scss";
+/* Подключение миксин end*/
+
+/* Container start */
+.big-container{
+    margin: 0 auto;
+    padding: 0px 10px;
+    max-width: 1220px;
+}
+.container{
+    margin: 0 auto;
+    padding: 0px 10px;
+    max-width: 900px;
+}
+/* Container end */
+
+/* header start */
+.header{
+    padding-top: 25px;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+/* header end */
+
+/* Основные стили start */
+
+body{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #040404;
+    font-family: 'Roboto';
+    overflow-x:hidden;
+}
+
+.title{
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 38px;
+    text-transform: uppercase;
+}
+/* Основные стили end */
+
+/* navigation start */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    &__list{
+        padding-top: 25px;
+        gap: 0 40px;
+    }
+    &__link{
+        color:#363636;
+        font-size: 16px;
+    }
+}
+
+.logo{
+    &__img{
+        @include scroll-appearance-logo(0, 200%)
+    }
+}
+
+.menu-left{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25px;
+}
+
+.menu-right{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 80px;
+}
+/* navigation end */
+
+.sidebar{
+    display: none;
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background-color: rgb(73, 73, 199);
+    top: 0px;
+    left: -260px;
+    transition: all .5s ease;
+    &__titile{
+        font-size: 30px;
+        color: white;
+        text-align: center;
+        line-height: 70px;
+        background-color: rgb(20, 31, 52);
+    }
+    &__link{
+        display: block;
+        height: 100%;
+        width: 100%;
+        line-height: 60px;
+        font-size: 18px;
+        color: white;
+        padding-left: 30px;
+        box-sizing: border-box;
+        border-top: 1px solid rgba(255, 255, 255, .1);
+        border-bottom: 1px solid black;
+        transition: .4s;
+    }
+}
+.sidebar__link:hover{
+    padding-left: 35px;
+}
+#close{
+    max-width: 30px;
+}
+#check{
+    display: none;
+}
+#menu{
+    display: none;
+}
+label #menu, label #close{
+    position: absolute;
+    cursor: pointer;
+}
+label #menu{
+    left: 40px;
+    top: 25px;
+    position: absolute;
+    transition: all .3s;
+}
+label #close{
+    z-index: 10;
+    left: -200px;
+    top: 22px;
+    position: fixed;
+    transition: all .5s ease;
+}
+#check:checked ~ .sidebar{
+    left: 0;
+}
+#check:checked ~ label #menu{
+    left: -250;
+    opacity: 0;
+}
+#check:checked ~ label #close{
+    left: 200px;
+}
+/* promo start */
+.promo{
+    background: url('../img/promo.jpg') center no-repeat;
+    background-size: cover;
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        min-height: 100vh;
+        padding-top: 100px;
+    }
+    &__title{
+        font-family: 'Impact';
+        font-size: 76px;
+        line-height: 93px;
+        letter-spacing: 0.02em;
+
+        @include scroll-appearance(0px, 120%)
+    }
+    &__subtitle{
+        font-family: 'Impact';
+        font-size: 48px;
+        line-height: 59px;
+        padding-top: 10px;
+
+        @include scroll-appearance(0px, 120%)
+    }
+    &__date{
+        font-size: 34px;
+        line-height: 34px;
+        color: #9F6B08;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    &__text{
+        color: #363636;
+        line-height: 18px;
+        font-size: 16px;
+        padding-top: 10px;
+    }
+    &__arrow{
+        margin-top: auto;
+        margin-bottom: 30px;
+        align-self: center;
+    }
+}
+
+.promo__subtitle:after{
+    content: "";
+    display: block;
+    background-color: #040404;
+    width: 386px;
+    height: 1px;
+    margin: 10px auto 0;
+}
+/* promo end */
+
+/* info start */
+.info{
+    padding-top: 100px;
+    &__item{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 35px;
+    }
+    &__text-one{
+        font-size: 16px;
+        flex-basis: 440px;
+
+        @include scroll-appearance-text(-120%, 0)
+    }
+    &__text-two{
+        font-size: 15px;
+        font-weight: 700;
+        color: #040404;
+        flex-basis: 313px;
+        
+        @include scroll-appearance-text(120%, 0)
+    }
+    &__image{
+        padding-top: 30px;
+        max-height: 415px;
+        width: 100%;
+
+        @include scroll-appearance-img(20%, 80%)
+    }
+}
+/* info end */
+
+/* team start */
+.team{
+    padding-top: 100px;
+    &__item{
+        padding-right: 80px;
+        padding-top: 30px;
+    }
+    &__image{
+        @include scroll-appearance-img(0, 80%)
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__text-one{
+        @include scroll-appearance-text-async(-120px, 0, 0.5s)
+    }
+    &__text-two{
+        padding-top: 30px;
+        @include scroll-appearance-text-async(-120px, 0, 0.7s)
+    }
+}
+/* team end */
+
+/* calendar start */
+.calendar{
+    padding-top: 100px;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__text{
+        margin-right: 60px;
+        max-width: 450px;
+    }
+    &__text-one{
+        padding-top: 30px;
+
+        @include scroll-appearance-text(-120%, 0)
+    }
+    &__table{
+        border-bottom: 1px solid #000;
+        position: relative;
+
+        @include scroll-appearance-text(0, 120%)
+    }
+    &__table td{
+        padding-bottom: 25px;
+    }
+}
+
+.calendar__table:before{
+    content: '';
+    border-top: 1px solid #000;
+    position: absolute;
+    top: -25px;
+    width: 100%;
+}
+/* calendar end */
+
+/* trec start */
+.trec{
+    padding: 100px;
+    margin-top: 90px;
+    background: url('../img/fontTrec.png') center no-repeat;
+    background-size: cover;
+    &__text{
+        padding-top: 50px;
+        max-width: 435px;
+    }
+    &__text-one{
+        padding-top: 30px;
+
+        @include scroll-appearance-text(-120%, 0)
+    }
+    &__imag{
+        margin: 0 auto;
+        display: block;
+        margin-top: 250px;
+
+        @include scroll-appearance-img(0, 60%)
+    }
+}
+/* trec end */
+
+/* stats start */
+.stats{
+    padding-top: 100px;
+    background: url('../img/bg2.png');
+    color: white;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__text{
+        max-width: 430px;
+    }
+    &__text-One{
+        @include scroll-appearance-text-async(120%, 0, 0.5s)
+    }
+    &__text-two{
+        padding-top: 30px;
+        @include scroll-appearance-text-async(120%, 0, 0.7s)
+    }
+    &__cars-lamb{
+        margin: 0 auto;
+        display: block;
+        margin-top: 200px;
+        position: relative;
+        z-index: 2;
+
+        @include scroll-appearance-img(-120%, 0)
+    }
+    &__characteristics{
+        padding-top: 60px;
+        padding-bottom: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__moving{
+        text-transform: uppercase;
+
+        @include scroll-appearance-text(0, -100%)
+    }
+    &__num{
+        padding-top: 5px;
+
+        @include scroll-appearance-text(0, 100%)
+    }
+    &__tt{
+        position: relative;
+    }
+    &__dec1{
+        position: absolute;
+        top: -210px;
+        left: -130px;
+    }
+    &__dec2{
+        position: absolute;
+        top: -110px;
+        left: -50px;
+    }
+    &__dec33{
+        position: absolute;
+        top: 330px;
+        left: 400px;
+    }
+    &__dec44{
+        position: absolute;
+        top: 470px;
+        left: 660px;
+    }
+}
+/* stats end */
+
+/* sots start */
+.sots{
+    padding-top: 120px;
+    &__wrapper{
+        color: #040404
+    }
+    &__des{
+        max-width: 285px;
+
+        @include scroll-appearance-text-async(-120%, 0, 0.5s)
+    }
+    &__dis{
+        padding-top: 30px;
+        max-width: 440px;
+
+        @include scroll-appearance-text-async(-120%, 0, 0.7s)
+    }
+    &__lis{
+        padding-top: 30px;
+        max-width: 600px;
+        @include scroll-appearance-text-async(-120%, 0, 0.9s)
+    }
+}
+/* sots end */
+
+/* video end */
+.video{
+    position: relative;
+    padding-top: 500px;
+    background: url('../img/bgmb.png') no-repeat center;
+    &__link{
+        position: absolute;
+        left: 48.5%;
+        bottom: 48%;
+    }
+}
+/* video end */
+
+/* blog start */
+.blog{
+    padding-bottom: 100px;
+    &__title{
+        padding-bottom: 30px;
+    }
+    &__item-title{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 20px;
+        text-transform: uppercase;
+        min-height: 70px;
+        padding-top: 20px;
+        padding-bottom: 15px;
+    }
+    &__item-text{
+        color: #040404;
+        padding-bottom: 10px;
+
+    }
+    &__item-link{
+        font-size: 12px;
+        color: #363636;
+    }
+    &__slider{
+        position: relative;
+    }
+    &__btn{
+        position: absolute;
+        z-index: 3;
+    }
+}
+
+.swiper-button-right{
+    padding-left: 52%;
+    margin-top: -5%;
+}
+.swiper-button-left{
+    margin-top: -5%;
+    padding-left: 46%;
+}
+/* blog end */
+
+/* quote start */
+.quote{
+    padding-bottom: 120px;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__text{
+        max-width: 440px;
+    }
+    &__list{
+        padding-bottom: 30px;
+
+        @include scroll-appearance-text(-120%, 0)
+    }
+}
+.qe_two{
+    @include scroll-appearance-text(-120%, 0)
+}
+.gold{
+    font-size: 12px;
+    color: #9F6B08;
+    padding-bottom: 3px;
+}
+.black{
+    font-weight: 700;
+    font-size: 14px;
+    color: #040404;
+    padding-bottom: 10px;
+}
+/* quote end */
+
+/* footer start */
+.footer{
+    padding: 100px 0 80px;
+    background: #363636;
+    color: white;
+    &__title{
+        font-size: 32px;
+        text-transform: uppercase;
+        font-weight: 300;
+        margin-bottom: 50px;
+    }
+    &__map{
+        width: 550px;
+        height:300px;
+    }
+    &__info-item{
+        margin-bottom: 50px;
+    }
+    &__info-item dt{
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    &__info-item dd{
+        margin-bottom: 10px;
+    }
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        gap: 0 20px;
+    }
+    &__adress{
+        flex-basis: 460px;
+    }
+    &__adress-title{
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    &__adress-text{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    &__bottom{
+        margin-top: 35px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.logo__footer-img{
+    @include scroll-appearance-logo(0, 120%)
+}
+
+.social-list{
+    display: flex;
+    gap: 0 20px;
+    align-items: center;
+}
+
+.mail-white{
+    color: white;
+}
+
+#map{
+    height: 250px;
+}
+/* footer end */
+
+@import "mediastyle";

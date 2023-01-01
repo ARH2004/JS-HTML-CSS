@@ -1,0 +1,331 @@
+/* Подключение media-запросов start*/
+@media (max-width: 1024px){
+    .nav{
+        &__link{
+            font-size: 14px;
+        }
+    }
+    .promo{
+        &__title{
+            font-size: 55px;
+        }
+        &__subtitle{
+            font-size: 40px;
+        }
+        &__date{
+            font-size: 27px;
+        }
+    }
+    .stats{
+        &__dec44{
+            left: 635px;
+        }
+    }
+    .logo__img{
+        max-width: 75px;
+    }
+}
+
+@media (max-width: 970px){
+    .nav{
+        &__link{
+            font-size: 13px;
+        }
+    }
+    .promo{
+        &__title{
+            font-size: 50px;
+        }
+        &__subtitle{
+            font-size: 35px;
+        }
+        &__date{
+            font-size: 25px;
+        }
+    }
+    .stats{
+        &__cars-lamb{
+            max-width: 600px;
+        }
+        &__moving{
+            font-size: 13px;
+        }
+        &__num{
+            font-size: 12px;
+        }
+        &__dec1{
+            top: -225px;
+            left: -25px;
+            max-width: 170px;
+        }
+        &__dec2{
+            top: -100px;
+            left: 30px;
+            max-width: 400px;
+        }
+        &__dec33{
+            top: 290px;
+            left: 340px;
+            max-width: 250px;
+        }
+        &__dec44{
+            left: 520px;
+            top: 460px;
+            max-width: 260px;
+        }
+    }
+    .logo__img{
+        max-width: 70px;
+    }
+}
+
+@media (max-width: 928px) {
+    .nav{
+        &__link{
+            font-size: 12px;
+        }
+    }
+    .logo__img{
+        max-width: 65px;
+    }
+}
+
+@media (max-width: 790px){
+    .promo{
+        &__title{
+            font-size: 45px;
+        }
+        &__subtitle{
+            font-size: 30px;
+        }
+        &__date{
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .sidebar{
+        display: block;
+        z-index: 9;
+    }
+    .nav__list{
+        display: none;
+    }
+    #menu{
+        display: block;
+    }
+    .s{
+        display: block;
+        margin: 0 auto;
+    }
+    .info{
+        &__text-one{
+            font-size: 14px;
+        }
+        &__text-two{
+            font-size: 14px;
+        }
+    }
+    .team{
+        &__wrapper{
+            flex-direction: column;
+            align-items: center;
+        }
+        &__image{
+            max-width: 350px;
+            margin-top: 30px;
+        }
+    }
+    .calendar{
+        &__wrapper{
+            flex-direction: column;
+        }
+        &__table{
+            margin-top: 50px;
+        }
+    }
+    .trec{
+        &__imag{
+            max-width: 400px;
+        }
+    }
+    .stats{
+        &__wrapper{
+            flex-direction: column;
+        }
+        &__title{
+            padding-bottom: 25px;
+        }
+        &__moving{
+            font-size: 10px;
+        }
+        &__num{
+            font-size: 10px;
+        }
+        &__cars-lamb{
+            max-width: 500px;
+        }
+        &__dec1{
+            top: -140px;
+            left: 5px;
+            max-width: 100px;
+        }
+        &__dec2{
+            max-width: 300px;
+            top: -75px;
+        }
+        &__dec33{
+            top: 260px;
+            left: 300px;
+            max-width: 200px;
+        }
+        &__dec44{
+            display: none;
+        }
+    }
+}
+.video{
+    background-size: 600px;
+    margin-top: -50px;
+
+    &__link{
+        left: 46.5%;
+        bottom: 45%;
+    }
+}
+.swiper-wrapper{
+    text-align: center;
+}
+.swiper-button-left{
+    margin-top: -6%;
+}
+.swiper-button-right{
+    margin-top: -6%;
+}
+.quote{
+    &__image{
+        max-width: 300px;
+    }
+}
+.footer{
+    &__adress-text{
+        font-size: 14px;
+    }
+    &__map{
+        max-width: 320px;
+        max-height: 200px;
+    }
+}
+@media (max-width: 610px){
+    .trec{
+        &__imag{
+            max-width: 300px;
+            margin-top: 100px;
+        }
+    }
+    .stats{
+        &__cars-lamb{
+            max-width: 400px;
+        }
+        &__moving{
+            font-size: 8px;
+        }
+        &__num{
+            font-size: 8px;
+        }
+    }
+    .video{
+        background-size: 500px;
+    }
+    .sots{
+        padding-top: 70px;
+    }
+    .blog{
+        &__item-title{
+            font-weight: 600;
+            font-size: 16px;
+        }
+        &__item-text{
+            font-size: 13px;
+        }
+    }
+    .quote{
+        &__wrapper{
+            flex-direction: column;
+        }
+        &__image{
+            max-width: 300px;
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-bottom: -40px;
+        }
+    }
+    .footer{
+        &__map{
+            max-width: 250px;
+            max-height: 150px;
+        }
+    }
+}
+
+@media (max-width: 435px){
+    .promo{
+        &__title{
+            font-size: 25px;
+        }
+        &__subtitle{
+            font-size: 20px;
+        }
+        &__date{
+            font-size: 16px;
+        }
+    }
+    .trec__imag {
+        max-width: 200px;
+        margin-top: 50px;
+    }
+    .video {
+        background-size: 400px;
+        margin-top: -70px;
+        margin-bottom: -70px;
+    }
+    .swiper-button-left{
+        padding-left: 44%;
+        margin-top: -9%;
+    }
+    .swiper-button-right{
+        padding-left: 54%;
+        margin-top: -9%;
+    }
+    .stats{
+        &__cars-lamb{
+            max-width: 300px;
+        }
+        &__dec1{
+            top: -95px;
+            left: -5px;
+            max-width: 70px;
+        }
+        &__dec2{
+            max-width: 200px;
+            top: -45px;
+            left: 0px;
+        }
+        &__dec33{
+            top: 190px;
+            left: 215px;
+            max-width: 150px;
+        }
+    }
+    .footer{
+        padding-top: 80px;
+        padding-bottom: 50px;
+        &__map{
+            max-width: 150px;
+            max-height: 200px;
+        }
+    }
+}
+/* Подключение media-запросов end*/

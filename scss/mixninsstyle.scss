@@ -1,0 +1,49 @@
+@mixin scroll-appearance($X, $Y) {
+	transition: all 0.7s ease-in-out 0s;
+	transform: translate($X, $Y);
+	opacity: 0;
+	&._active {
+		transform: translate(0px, 0px);
+		opacity: 1;
+	}
+}
+
+@mixin scroll-appearance-img($X, $Y) {
+	transition: all 0.5s ease-in-out 0s;
+	transform: translate($X, $Y);
+	opacity: 0;
+	&._active {
+		transform: translate(0px, 0px);
+		opacity: 1;
+	}
+}
+
+@mixin scroll-appearance-logo($X, $Y) {
+	transition: all 0.5s ease-in-out 0s;
+	transform: translate($X, $Y);
+	opacity: 0;
+	&._active {
+		transform: translate(0px, 0px);
+		opacity: 1;
+	}
+}
+
+@mixin scroll-appearance-text($X, $Y) {
+	transition: all 0.7s ease-in-out 0s;
+	transform: translate($X, $Y);
+	opacity: 0;
+	&._active {
+		transform: translate(0px, 0px);
+		opacity: 1;
+	}
+}
+
+@mixin scroll-appearance-text-async($X, $Y, $S) {
+	transition: all $S ease-in-out 0s;
+	transform: translate($X, $Y);
+	opacity: 0;
+	&._active {
+		transform: translate(0px, 0px);
+		opacity: 1;
+	}
+}
